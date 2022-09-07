@@ -1,0 +1,381 @@
+@font-face {
+  font-family: IRANSans-bold;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+  src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+  src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans-light;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/eot/IRANSansWeb_Light.eot');
+  src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+  src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/eot/IRANSansWeb.eot');
+  src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+$background:#f4f5f9;
+body{
+background: $background;
+}
+
+$color-1: #e73d0b;
+$color-4:#202020;
+$color-2: #6a6a6a;
+$color-3: #999999;
+.text-red{
+  color: $color-1 !important;
+}
+.btn-white{
+  border:1px solid white;
+  text-align: center;
+  padding:10px 30px;
+  color: white;
+  font-family: IRANSans;
+  font-size: 13px;
+  border-radius: 2px;
+}
+$color-5: #e85040;
+hr{
+  border-color: rgba(255, 255, 255, 0.84);
+  margin: 20px 1px;
+  text-align: center;
+width: 80%;
+  margin: 0 auto;
+}
+.line{
+background-color: $color-1;
+ width: 6px;
+  height: 6px;
+  display: block;
+  text-align: center;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  position: relative;
+  &:before{
+content: " ";
+    display: block;
+position: absolute;
+    right: 20px;
+    width:80px;
+    top: 2px;
+    height: 1px;
+    background-color:$color-3 ;
+  }
+  &:after{
+content: " ";
+    position: absolute;
+    left: 20px;
+top: 2px;
+    width:80px;
+    height: 1px;
+    background-color:$color-3 ;
+  }
+}
+.icon{
+color:$color-1;
+font-size: 20px;
+}
+.title-1{
+  margin: 10px;
+  color: $color-2;
+&:before{
+  content: " ";
+  display: inline-block;
+  background-color: $color-1;
+  height: 25px;
+  width: 5px;
+margin: 0 5px -5px 23px;
+}
+  font-family: IRANSans-bold;
+}
+.text-light{
+ color: $color-3;
+  font-size: 14px;
+  font-family: IRANSans-light;
+}
+main{
+  overflow: hidden;
+}
+.btn-red,.btn-red-light{
+  text-align: center;
+  padding: 10px 36px;
+  color: #ffffff;
+  font-family: IRANSans;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #da3808;
+
+}
+.btn-gray{      box-shadow: black 0 3px 15px -11px;
+
+  text-align: center;
+  padding: 10px 36px;
+  color: #ffffff;
+  font-family: IRANSans;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: $color-3;
+  transition: all 0.6s ease;
+
+}
+.go-to-top{
+  background:#413c3b;
+  color: white;
+  opacity: 0.7;
+  width: 15px;
+  z-index: 9999999;
+  height: 15px;
+  border-radius: 50%;
+  position: fixed;
+  font-weight: bolder;
+  cursor: pointer;
+  bottom: 30px;
+
+  right: 20px;
+  text-align: right;
+  font-size: 26px;
+
+  padding: 5px 10px 17px 11px;  transition: all 0.5s ease;
+  display: none;
+  &:hover{
+opacity: 1;
+  }
+}
+.flex-coulum{
+  display: flex;
+  flex-direction: column;
+}
+.text-gray{
+  font-family: IRANSans-bold;
+  color: $color-2;
+  margin: 5px;
+}
+.center-flex{
+  display: flex;
+  flex-direction: inherit;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+button{
+  border: none;
+}
+.title-white{
+
+  position: relative;
+  color: white;
+  font-size: 23px;
+  font-weight: lighter;
+  font-family: IRANSans;
+  &:after{  transition:all 0.8s ease;
+    position: absolute;
+    content: " ";
+    width: 30px;
+    height: 3px;
+    bottom: 40px;
+    right: 0;
+    background-color: white;
+  }
+}
+.ic-bx {
+  .i-Square {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    position: relative;
+
+    .fa {
+      left: 0;
+      top: 43%;
+      bottom: 0;
+      right: 6px;
+      position: absolute;
+      font-weight: 900;
+
+    }
+
+    div {
+      transition: all 0.5s ease;
+
+      position: absolute;
+      border: 1px solid #eadede;
+      height: 65px;
+      width: 65px;
+
+      border-radius: 2px;
+    }
+
+    margin-bottom: 10px;
+  }
+
+  margin: 5px 15px;
+
+  h4 {
+    text-align: center;
+    word-spacing: 1px;
+
+    &:after {
+      transition: all 0.5s ease;
+      content: " ";
+      width: 50px;
+      height: 2px;
+      display: block;
+      margin: 5px auto;
+      background-color: $color-2;
+    }
+
+    color: $color-2;
+font-weight: lighter;
+    font-family: IRANSans;
+    margin: 15px;
+  }
+
+  p {
+    width: 200px;
+    color: $color-3;
+
+    font-size: 14px;
+    font-family: IRANSans-light;
+  }
+
+  text-align: center;
+}
+.btn-red-light{
+  width: 90px;
+  box-shadow:0 0 7px -5px black;
+font-size: 13px;
+  position: relative;
+  transition:all 1s ease-in-out;
+
+  &:hover{
+&:before{
+  width: 100%;
+}
+  }
+
+  border: 1px solid $color-1;
+  color: white;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 7px 15px;
+}
+.circle-dots{
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5px;
+  span{
+    transition: all 0.5s ease;
+    cursor: pointer;
+&:hover{
+  background: $color-1;
+  opacity: 0.8;
+}
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 4px;
+    background: #c9c9c7;
+  }
+  .act-dot{
+    background: $color-1;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  transition:all 0.5s ease;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dedede;
+  transition:all 0.5s ease;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition:all 0.5s ease;
+  background: $color-1;  height: 100px;
+
+  border-radius: 3px;transition: all 0.6s ease-in;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+opacity: 0.7;
+}
+.bars{
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+.bars{
+
+}
+.shape{
+  &:before {
+    transition: all 0.5s ease;
+    content: " ";
+    width: 30px ;
+    height: 2px;
+right: 10px;
+    position: absolute;
+
+    bottom: 10px;
+    background-color: $color-1;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.active-nav{
+  font-weight: bold;
+  color: $color-1 !important;
+}

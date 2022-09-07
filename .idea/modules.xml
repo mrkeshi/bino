@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/blog/.idea/blog.iml" filepath="C:/blog/.idea/blog.iml" />
+      <module fileurl="file://C:/project/.idea/laravepro.iml" filepath="C:/project/.idea/laravepro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myPanelAdmin/.idea/myPanelAdmin.iml" filepath="$PROJECT_DIR$/../myPanelAdmin/.idea/myPanelAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../provl/.idea/provl.iml" filepath="$PROJECT_DIR$/../provl/.idea/provl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/template.iml" filepath="$PROJECT_DIR$/.idea/template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vue/.idea/vue.iml" filepath="$PROJECT_DIR$/../vue/.idea/vue.iml" />
+    </modules>
+  </component>
+</project>

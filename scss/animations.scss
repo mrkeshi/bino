@@ -1,0 +1,299 @@
+// change text color with hover
+
+.h-ch-t {
+  transition: color ease-in-out 0.6s;
+
+  &:hover {
+
+    color: $color-1 !important;
+  }
+
+}
+
+//change style btn hover
+.h-ch-b {
+  transition: background-color 0.6s ease-in-out, border 0.5s ease-in-out;
+
+  &:hover {
+
+    background-color: $color-1;
+    border-color: $color-1;
+  }
+}
+
+.ul-1 li {
+  transition: all 0.5s ease;
+  position: relative;
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    transition: all 0.5s ease;
+    content: " ";
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+
+    bottom: -3px;
+    background-color: $color-1;
+  }
+
+}
+
+.ic-bx:hover .i-Square > div {
+  transform: rotate(180deg);
+  border-color: $color-1 !important;
+}
+
+.ic-bx:hover h4:after {
+  background-color: $color-1 !important;
+}
+
+.btn-red {
+  transition: all 0.5s ease;
+
+  &:hover {
+
+    box-shadow: black 0px 0px 26px -11px;
+  }
+}
+
+.ser-box:hover .ser-ico {
+
+  box-shadow: white 0px 0px 15px -2px;
+
+}
+
+.price-table {
+  &:hover {
+    .btn-gray {
+      background-color: $color-1;
+    }
+
+    .ta-pr-to {
+      background-color: $color-1 !important;
+    }
+
+  }
+}
+
+.post:hover .details-post > a:nth-child(2):before {
+
+  width: 90% !important;
+
+}
+
+.post:hover .image-post {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  opacity: 0.9;
+
+}
+
+.image-work {
+
+  transition: all 0.5s ease-in-out;
+}
+
+.work {
+  &:hover {
+    .hover-work {
+      opacity: 1 !important;
+      bottom: 6% !important;
+      right: 7% !important;
+    }
+
+    .zoom {
+      img {
+
+        transform: scale(1.05);
+
+      }
+
+      z-index: -1;
+      position: relative;
+    }
+
+    &:after {
+      background-color: $color-1;
+      opacity: 0.7 !important;
+
+    }
+  }
+}
+
+.zoom {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+
+  img {
+
+    position: relative;
+
+    &:hover {
+
+
+    }
+  }
+}
+
+.work:hover .title-white:after {
+  width: 70%;
+}
+
+.company-item {
+  transition: all 0.5s ease-in-out;
+
+  img {
+    transition: all 0.5s ease-in-out;
+
+    opacity: 0.6;
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+
+    img {
+
+
+    }
+  }
+
+  position: relative;
+
+  &:before {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    background-color: $color-1;
+    content: ' ';
+
+  }
+}
+
+.ds {
+  width: inherit;
+  height: inherit;
+  position: relative !important;
+  transform: scale(1) !important;
+}
+
+.sl-show:hover {
+  .btn-red-light {
+    background: $color-1;
+    color: white;
+  }
+}
+
+.main_team ul > li {
+
+  .single_team_img img {
+    transition: all 0.6s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      box-shadow: 0 0 19px -5px $color-1;
+
+    }
+
+    .single_team_text {
+      top: -5px;
+      opacity: 1;
+    }
+  }
+
+}
+
+
+@charset "UTF-8";
+/*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Animate.css
+ */
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s
+}
+
+.animated.bounceIn, .animated.bounceOut, .animated.flipOutX, .animated.flipOutY {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s
+}
+
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0)
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
